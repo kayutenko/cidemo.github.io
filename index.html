@@ -41,7 +41,17 @@
           </div>
           <button type="button" class="btn btn-primary" id="get_content">Get content</button> 
       </div>
-      <div class="row" id="empty_row" style="border: 1px solid #D0D0D0; border-radius: 5px; margin:40px 0px; padding: 10px 10px;">
+      <div class="row" id="login" style="border: 1px solid #D0D0D0; border-radius: 5px; margin:40px 0px; padding: 10px 10px;">
+            <form>
+              <div class="form-group">
+                <label for="login">Login id</label>
+                <input type="login" class="form-control" id="login" aria-describedby="loginHelp" placeholder="Enter your login id">
+                <small id="loginHelp" class="form-text text-muted"></small>
+              </div>              
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+      <div class="row" id="email" style="border: 1px solid #D0D0D0; border-radius: 5px; margin:40px 0px; padding: 10px 10px;">
             <form>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
@@ -50,6 +60,8 @@
               </div>              
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+          </div>
+            <div class="row" id="name" style="border: 1px solid #D0D0D0; border-radius: 5px; margin:40px 0px; padding: 10px 10px;">
             <form>
               <div class="form-group">
                 <label for="exampleInputName">Name</label>
@@ -58,6 +70,8 @@
               </div>              
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+          </div>
+          <div class="row" id="phone" style="border: 1px solid #D0D0D0; border-radius: 5px; margin:40px 0px; padding: 10px 10px;">
             <form>
               <div class="form-group">
                 <label for="exampleInputPhone">Phone number</label>
