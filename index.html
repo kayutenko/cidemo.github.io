@@ -13,19 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta property="og:url" content="https://kayutenko.github.io/cidemo/">
     <meta property="og:site_name" content="CI360 Demo Website">
-    <link rel="stylesheet" href="/cidemo/assets/css/style.css?v=72ffe3e07736d5c3bc291db4c4bcd36a5adf2875">
-    <script>
-        async function digestMessage(a){
-            const b = new TextEncoder().encode(a);
-            const c = await crypto.subtle.digest("SHA-256",b);
-            const d = new Uint8Array(c);
-            const e = Array.from(d);
-            const f = e.map(a=>a.toString(16).padStart(2,"0")).join("");
-            return f;
-        }
-        var sas_em = await digestMessage(Object.values(fbq.instance.pixelsByID)[0].userData.em)
-        var sas_ts = 0 | Date.now()/1e3;
-    </script>    
+    <link rel="stylesheet" href="/cidemo/assets/css/style.css?v=72ffe3e07736d5c3bc291db4c4bcd36a5adf2875">    
     <!--     CI360 tag start -->
     <script>
         (function(ci){
