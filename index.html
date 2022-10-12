@@ -20,11 +20,11 @@
     </script>    
     
     <script>
-        (function(ci){
+        (function(ci, a){
           var ef=window[ci]=function(){
               return ef.q.push(arguments);
           };
-          ef.q=[];ef.a={};
+          ef.q=[];ef.a=a||{};
         })('ci360', {
           identity:{
             source:'url', 
