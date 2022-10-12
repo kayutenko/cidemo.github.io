@@ -19,7 +19,7 @@
         var sas_ts = 0 | Date.now()/1e3;
     </script>    
     
-    <script>
+<!--     <script>
         (function(ci, a){
           var ef=window[ci]=function(){
               return ef.q.push(arguments);
@@ -32,8 +32,30 @@
             name:'identity', 
             obscure:false}
         });
+    </script> -->
+<!--     <script async data-efname='ci360' data-a='01a180d775000112296f20e2' src='https://i-eu.ci360.marketing/js/ot-all.min.js' id='ob-script-async'></script> -->
+    <script>
+    (function(ci,src,a) {
+        var w=window,d=document,ot,z,ef=w[ci]=function(){return ef.q.push(arguments);};
+        ef.q=[];ef.a=a||{};
+        ot=d.createElement("script");ot.id="ob-script-async";ot.async=true;
+        ot.src=src;ot.setAttribute('data-efname',ci);
+        var t = document.createAttribute("a"); t.nodeValue = ef.a.tenantId; ot.attributes.setNamedItem(t);
+        z=d.getElementsByTagName("script")[0];
+        z.parentNode.insertBefore(ot,z);
+        return ef;
+    })
+    ('ci360',
+     'https://i-eu.ci360.marketing/js/ot-all.min.js',
+     {tenantId:'01a180d775000112296f20e2', identity:{
+            source:'url', 
+            type:'login_id', 
+            name:'identity', 
+            obscure:false}
+     }
+    );
+    
     </script>
-    <script async data-efname='ci360' data-a='01a180d775000112296f20e2' src='https://i-eu.ci360.marketing/js/ot-all.min.js' id='ob-script-async'></script>
 <!--     CI360 tag end -->
     
 <!-- Google tag (gtag.js) start -->
