@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moneta/SAS Showcase</title>
+    <link rel='preload' href='https://i-eu.ci360.marketing/js/ot2.min.js' as='script' >
+    <script>
+
+
+        (function(ci){
+        
+          var ef=window[ci]=function(){
+        
+              return ef.q.push(arguments);
+        
+          };
+        
+          ef.q=[];ef.a={};
+        
+        })('ci360',{tenantId:'01a180d775000112296f20e2'});   
+    </script>
+    <script async data-efname='ci360' data-a='01a180d775000112296f20e2' src='https://i-eu.ci360.marketing/js/ot2.min.js' id='ob-script-async'></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+      }
+
+      .iphone-frame {
+        position: relative;
+        width: 300px; /* Adjust size as necessary */
+        height: 600px; /* Adjust size as necessary */
+        background: url("iPhone-15-frame.png") no-repeat center center;
+        background-size: contain;
+      }
+
+      .screen {
+        position: absolute;
+        top: 87px; /* Adjust to match the screen area of the frame */
+        left: 45px; /* Adjust to match the screen area of the frame */
+        width: 210px; /* Adjust to match the screen area of the frame */
+        height: 500px; /* Adjust to match the screen area of the frame */
+        overflow: hidden;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .carousel {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        overflow: scroll;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+      }
+
+      .card {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex: none;
+        width: 100%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+
+      .moneta-logo {
+        position: fixed;
+        width: 100px;
+        padding: 5px 0px 0px 10px;
+      }
+
+      .card h2 {
+        color: #000;
+        font-weight: 700;
+        letter-spacing: -1px;
+      }
+
+      .card p {
+        color: #2e2e2e;
+        font-size: 0.9rem;
+      }
+
+      .card button {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px 20px;
+        background-color: #2b1f69;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="iphone-frame">
+      <div class="screen">
+        <div class="carousel">
+          <img src="moneta-logo.svg" alt="" srcset="" class="moneta-logo" />
+          <div class="card" id="monetaCard1">
+            <h2>Product Title 1</h2>
+            <p>Product description 1</p>
+            <button>See Details</button>
+          </div>
+          <div class="card" id="monetaCard2">
+            <h2>Product Title 2</h2>
+            <p>Product description 2</p>
+            <button>See Details</button>
+          </div>
+          <div class="card" id="monetaCard3">
+            <h2>Product Title 3</h2>
+            <p>Product description 3</p>
+            <button>See Details</button>
+          </div>
+          <div class="card" id="monetaCard4">
+            <h2>Product Title 4</h2>
+            <p>Product description 4</p>
+            <button>See Details</button>
+          </div>
+          <div class="card" id="monetaCard5">
+            <h2>Product Title 5</h2>
+            <p>Product description 5</p>
+            <button>See Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const carousel = document.querySelector(".carousel");
+      carousel.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        carousel.scrollBy({
+          left: event.deltaY < 0 ? -200 : 200,
+        });
+      });
+    </script>
+  </body>
+</html>
